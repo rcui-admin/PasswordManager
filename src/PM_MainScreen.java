@@ -426,7 +426,7 @@ public class PM_MainScreen extends javax.swing.JFrame {
                     }
                     else {
                         //prints account information into the specified text file
-                        pw.print("Account Name:\t" + accountName + "\n" + "Username:\t\t" + userName + "\n" + "Password:\t\t" + confirmPass + "\n\n");
+                        pw.print("\nAccount Name:\t" + accountName + "\n" + "Username:\t\t" + userName + "\n" + "Password:\t\t" + confirmPass + "\n\n");
                         pw.close();
                         JOptionPane.showMessageDialog(this, "New Account Saved!");
                         

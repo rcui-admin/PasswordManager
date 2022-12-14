@@ -1,0 +1,12 @@
+Account Name:	yahoo
+Username:		powerRangerBlue
+Password:		password
+
+this is a line put in from the textArea frame window
+
+security question answer: mySuitAccount 
+
+Name:	Youtube
+Username:		blueRanger@gmail.com
+Password:		lZi3$fW%BO$&>AK>A{L{
+

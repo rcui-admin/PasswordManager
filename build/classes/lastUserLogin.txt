@@ -12,3 +12,5 @@ user1-pass1.txt
 user1-pass1.txt
 richard-password.txt
 david-freer.txt
+richard-password.txt
+powerRangers-blue1.txt
