@@ -271,12 +271,20 @@ public class PM_LoginScreen extends javax.swing.JFrame {
                 String dirName = "src/userAccounts/";
                 File dir = new File(dirName);
                 File userFile = new File(dir,fileName);
-                if(userFile.createNewFile()) {
+                if(userFile.createNewFile()) {   
+                    
+                    try {
+                        FileWriter fw1 = new FileWriter("src/lastUserLogin.txt",true);
+                        PrintWriter pw1 = new PrintWriter(fw1);
+                        pw1.println(fileName);
+                        pw1.close();
+                    }
+                    catch(IOException ex) {
+                        Logger.getLogger(PM_MainScreen.class.getName()).log(Level.SEVERE,null,ex);
+                    }
+                    
                     JOptionPane.showMessageDialog(this, "File Created:  " + fileName + "\nWelcome, New User!");
-                    this.fw = new FileWriter("src/lastUserLogin.txt",true);
-                    this.pw = new PrintWriter(this.fw);
-                    this.pw.println(fileName);
-                    this.pw.close();
+                    
                     this.setVisible(false);
                     new PM_MainScreen().pack();
                     new PM_MainScreen().setLocationRelativeTo(null);
