@@ -251,10 +251,10 @@ public class PM_MainScreen extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(usernameLabel)
                             .addComponent(newPassLabel)
-                            .addComponent(confirmPassLabel))
+                            .addComponent(confirmPassLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(accountNameLabel)
+                        .addComponent(accountNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -298,11 +298,11 @@ public class PM_MainScreen extends javax.swing.JFrame {
                         .addComponent(openSavedEntriesButton))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(252, 252, 252)
-                        .addComponent(copyPassButton))
+                        .addComponent(copyPassButton, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(285, 285, 285)
-                        .addComponent(savePassInfoButton)))
-                .addContainerGap(109, Short.MAX_VALUE))
+                        .addComponent(savePassInfoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -420,7 +420,7 @@ public class PM_MainScreen extends javax.swing.JFrame {
                     }
 
                     //if else argument to prevent duplicate accounts, check by account name,username, & password
-                    if(listofStrings.contains(userName) && listofStrings.contains(accountName) && listofStrings.contains(confirmPass)) {
+                    if(listofStrings.contains(userName) && listofStrings.contains(confirmPass)) {
                         JOptionPane.showMessageDialog(this, "Existing Account Found!\nTry again!");
                         confirmPassfield.setText("");
                     }
