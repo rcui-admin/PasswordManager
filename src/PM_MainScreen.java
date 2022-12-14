@@ -420,7 +420,7 @@ public class PM_MainScreen extends javax.swing.JFrame {
                     }
 
                     //if else argument to prevent duplicate accounts, check by account name,username, & password
-                    if(listofStrings.contains(userName) && listofStrings.contains(accountName) && listofStrings.contains(confirmPass)) {
+                    if(listofStrings.contains(userName) && listofStrings.contains(confirmPass)) {
                         JOptionPane.showMessageDialog(this, "Existing Account Found!\nTry again!");
                         confirmPassfield.setText("");
                     }
